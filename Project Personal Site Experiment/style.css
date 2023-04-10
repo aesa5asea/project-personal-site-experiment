@@ -1,0 +1,319 @@
+
+
+body,html {
+    height: 100%;
+    margin: 0;
+}
+
+.header {
+    text-align: center;
+    
+}
+
+/*main page*/
+.bg {
+    background-image: url(/assets/photo-1510784722466-f2aa9c52fff6.avif);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%; 
+}
+
+.hero-text{
+    text-align: center;
+    position: absolute;
+    top: 65%;
+    left: 43.5%;
+    color:white;
+    opacity: 0;
+    animation: fadeIn 4s ease-in-out forwards;
+    animation-delay: 2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*.footer {
+    padding: 20px;
+    text-align: left;
+    background: #470a0a;
+    color: white;
+}*/
+
+/* the link in the center text*/
+div a {
+  color: goldenrod;
+  text-decoration: none;
+}
+
+/* chat gpt magic - header element*/
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;    
+    z-index: 999;
+  }
+  
+.nav-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    font-size: 1.2rem;
+  }
+  
+.ul-home {
+    display: flex;
+    list-style: none;
+  }
+  
+.li-home {
+    margin: 0 20px;
+  }
+  
+.a-home {
+    color: white;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bolder;
+    background-color: black;
+    padding: 8px;
+    border-radius: 12px;
+    appearance: 1;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+  }
+
+.header1 {
+    position: fixed;
+    top: 0;
+    width: 100%;    
+    z-index: 999;
+  
+  }
+
+.navRest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    font-size: 1.2rem;
+  }
+  
+.ulRest {
+    display: flex;
+    list-style: none;
+  }
+  
+.liRest {
+    margin: 0 20px;
+  }
+  
+.aRest {
+    color: white;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bolder;
+    background-color: black;
+    padding: 8px;
+    border-radius: 12px;   
+  }
+
+  /* about page ((( https://www.sitepoint.com/css-typewriter-effect/ ))) */
+  
+
+.c1 .c2 .c3 .c4{
+  display: inline-block;
+}
+.type{
+  text-align: left;
+    position: absolute;
+    top: 60%;
+    left: 2%;
+    color:white;
+  font-size: 1.9rem;
+  overflow: hidden;
+  white-space: nowrap; 
+  width: 0;
+  animation: 
+    typing 1s steps(25, end) forwards;
+    animation-delay: 2s;
+}
+.type2{
+  text-align: left;
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    color:white;
+  font-size: 1.6rem; 
+  overflow: hidden;
+  white-space: nowrap; 
+  width: 0;
+  animation: 
+    typing 1s steps(25, end) forwards;
+  animation-delay: 3s;
+}
+.type3{
+  text-align: left;
+    position: absolute;
+    top: 75%;
+    left: 10%;
+    color:white;
+  font-size: 1.6rem; 
+  overflow: hidden; 
+  white-space: nowrap; 
+  width: 0;
+  animation: 
+    typing 1s steps(25, end) forwards;
+  animation-delay: 4s;
+}
+.type4{
+  text-align: left;
+    position: absolute;
+    top: 80%;
+    left: 15%;
+    color:white;
+  font-size: 1.6rem; 
+  overflow: hidden; 
+  white-space: nowrap; 
+  width: 0;
+  animation: 
+    typing 1s steps(25, end) forwards;
+  animation-delay: 5s;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 50% }
+}
+
+  /*.hero-text-about {
+    text-align: center;
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    color:white;
+    opacity: 0;
+    animation: fadeIn 4s ease-in-out forwards;
+}*/
+
+/*.hero-text-about {
+  text-align: left;
+    position: absolute;
+    top: 65%;
+    left: 5%;
+  
+  white-space:normal /* Keeps the text on one line *//*
+  letter-spacing: .15em; /* Adds spacing between letters *//*
+  color: white;
+  animation: typing 4s steps(40, end)
+  
+}*/
+/*
+@keyframes typing {
+  from {
+    width: 0 /* Starts with no width *//*
+  }
+  to {
+    width: 100% /* Ends with full width *//*
+  }
+}*/
+
+/* portfolio */
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 60px;
+  padding-left: 30px;
+}
+/*
+.row2,
+.row2 > .column2 {
+  padding: 30px;
+  padding-left: 20px;
+  
+}
+
+.row3,
+.row3 > .column3 {
+  padding-left: 50px;
+  
+}*/
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 300px;
+}
+/*
+.column2 {
+  float: left;
+  width: 300px;
+}
+
+.column3 {
+  float: left;
+  width: 300px;
+  margin-top: -60px;
+}
+*/
+
+/* Clear floats after rows *//*
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}*/
+
+/* Content */
+.content {
+  background-color: rgba(255, 255, 255, 0.2); /*semi-transparent white*/
+  padding: 10px;
+  animation: fadeIn 3s ease-in-out forwards;
+  color: white;
+}
+/*
+.content2 {
+  background-color: rgba(255, 255, 255, 0.2); /*semi-transparent white*//*
+  padding: 10px;
+  animation: fadeIn 4s ease-in-out forwards;
+  color: white;
+}
+
+.content3 {
+  background-color: rgba(255, 255, 255, 0.2); /**semi-transparent white*//*
+  padding: 10px;
+  animation: fadeIn 5s ease-in-out forwards;
+  color: white;
+}/*
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 00px) {
+  .column {
+    width: 500%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.footer {
+  text-align: center;
+  position: fixed; 
+  top: 93%;
+  left: 43.5%;
+  color: rgba(245, 222, 179, 0.346);
+
+}
+
